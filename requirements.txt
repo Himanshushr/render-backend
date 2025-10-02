@@ -1,9 +1,7 @@
---prefer-binary
-fastapi==0.104.1
-uvicorn==0.24.0
-pandas==2.0.3
-scikit-learn==1.3.2
-xgboost==1.7.6
-joblib==1.3.2
-numpy==1.24.3
-python-multipart==0.0.6
+fastapi
+uvicorn
+pandas==1.5.3  # Older, more stable version
+python-multipart
+numpy==1.23.5  # Stable version for older pandas/scikit-learn
+# You may need to add scikit-learn here if you use it in your code, 
+# but we are skipping it since your API is mock-based.
